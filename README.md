@@ -1,7 +1,7 @@
 # Mobius Coding Challenge App
 
 ## :scroll: Description
-Coding test for Mobius Development Studio Pvt Ltd. Simple app that shows list of coupons
+Coding test for Mobius Development Studio Pvt Ltd. Simple app that shows list of coupons.
 
 ## :bulb: Motivation and Context
 Designed full app with MVVM and used Groupie library for recyclerview.
