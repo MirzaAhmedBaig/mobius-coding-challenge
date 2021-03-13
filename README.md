@@ -1,5 +1,7 @@
 # Mobius Coding Challenge App
 
+[![Android CI](https://github.com/MirzaAhmedBaig/mobius-coding-challenge/actions/workflows/android.yml/badge.svg)](https://github.com/MirzaAhmedBaig/mobius-coding-challenge/actions/workflows/android.yml)
+
 ## :scroll: Description
 Coding test for Mobius Development Studio Pvt Ltd. Simple app that shows list of coupons.
 
