@@ -33,7 +33,7 @@ import com.mobius.coding_challenge.ui.models.Slab
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.viewbinding.BindableItem
-import java.util.*
+import java.util.Locale
 
 class CouponItem(private val coupon: Coupon) :
     BindableItem<CouponItemBinding>() {
