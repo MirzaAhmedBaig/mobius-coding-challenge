@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="list_back">#B83535</color>
+    <color name="footer">#8A4343</color>
+    <color name="coupon_back">#FFD6D6</color>
+    <color name="code_back">#FBF2F2</color>
+    <color name="green">#00ff00</color>
 </resources>

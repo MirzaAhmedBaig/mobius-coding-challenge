@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:animateLayoutChanges="true"
+    android:elevation="10dp"
+    app:cardBackgroundColor="@color/coupon_back"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/code_back"
+            android:padding="8dp"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="DHKEFNF" />
+
+        <com.mohan.ribbonview.RibbonView
+            android:id="@+id/tvRibbon_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvCode"
+            app:ribbonFillColor="#4BCA4B"
+            app:ribbonGravity="right"
+            app:ribbonStrokeWidth="0dp"
+            tools:text="Book now and Save 30%" />
+
+        <View
+            android:id="@+id/dvider_1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/tvRibbon_msg"
+            app:layout_constraintStart_toStartOf="@+id/tvCode"
+            app:layout_constraintTop_toBottomOf="@+id/tvCode" />
+
+        <ImageView
+            android:id="@+id/ivOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_discount"
+            app:layout_constraintStart_toStartOf="@+id/tvCode"
+            app:layout_constraintTop_toBottomOf="@+id/dvider_1" />
+
+        <TextView
+            android:id="@+id/tvOfferText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOffer"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_devide"
+            app:layout_constraintStart_toEndOf="@+id/ivOffer"
+            app:layout_constraintTop_toTopOf="@+id/ivOffer"
+            tools:text="DHKEFNF" />
+
+        <TextView
+            android:id="@+id/tvValidUtil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_devide"
+            app:layout_constraintStart_toEndOf="@+id/ivOffer"
+            app:layout_constraintTop_toBottomOf="@+id/tvOfferText"
+            tools:text="DHKEFNF" />
+
+        <TextView
+            android:id="@+id/tvExpand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Show details"
+            android:textColor="#FF9800"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivOffer"
+            app:layout_constraintTop_toBottomOf="@+id/tvValidUtil" />
+
+        <ImageView
+            android:id="@+id/ivExpand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tvExpand"
+            app:layout_constraintStart_toEndOf="@+id/tvExpand"
+            app:layout_constraintTop_toBottomOf="@+id/tvValidUtil"
+            app:layout_constraintTop_toTopOf="@+id/tvExpand" />
+
+
+        <TextView
+            android:id="@+id/tvMinSlab"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRibbon_msg"
+            tools:text="Min. deposit\n100000" />
+
+        <View
+            android:id="@+id/divider_6"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/tvApplied"
+            app:layout_constraintEnd_toStartOf="@id/tvMinSlab"
+            app:layout_constraintTop_toTopOf="@id/tvMinSlab" />
+
+        <TextView
+            android:id="@+id/tvApplied"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="end"
+            android:text="Applied"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_devide"
+            app:layout_constraintTop_toBottomOf="@+id/tvMinSlab" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_devide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <include
+            android:id="@+id/slab_list"
+            layout="@layout/expand_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/tvExpand"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@color/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slab_list"
+            app:layout_goneMarginTop="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <TextView
+            android:id="@+id/footerTextOne"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center|start"
+            android:text="Purchase Amount"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/footer"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_footer"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/footer" />
+
+        <TextView
+            android:id="@+id/footerTextTwo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center|start"
+            android:text="Purchase Amount"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline_footer"
+            app:layout_constraintTop_toTopOf="@+id/footer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

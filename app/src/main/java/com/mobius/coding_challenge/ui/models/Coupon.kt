@@ -29,5 +29,6 @@ data class Coupon(
     val visibility_user_segments: List<String>,
     val wager_bonus_expiry: Int,
     val wager_to_release_ratio_denominator: Int,
-    val wager_to_release_ratio_numerator: Int
+    val wager_to_release_ratio_numerator: Int,
+    var isExpanded: Boolean = false
 )
